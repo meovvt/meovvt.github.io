@@ -22,6 +22,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         {Name = "Mi ez", URL = "/what/", HasChildren = false},
         {Name = "TIL", URL = "/TIL/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Linkelek", URL = "/links/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Receptek", URL = "/recept/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
