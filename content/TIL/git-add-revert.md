@@ -4,6 +4,7 @@ linkTitle: git add * visszavonása
 weight: 1
 description: TIL hogyan vonjak vissz egy `git add *`-t.
 tags: [git, CLI, undo]
+date: '2023-09-15'
 ---
 
 # `git add *` visszavonása
