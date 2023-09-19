@@ -19,7 +19,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "Mi ez", URL = "/what/", HasChildren = false},
+        {Name = "Mi", URL = "what", HasChildren = false},
         {Name = "TIL", URL = "/til/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Linkelek", URL = "/links/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Receptek", URL = "/recept/", Pre = "Recent", HasChildren = true, Limit = 5},
@@ -33,41 +33,41 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
     rss_icon = true
     # Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss
-    rss_section = "TIL"
+    rss_section = ""
 
     # Hex colors for your sidebar.
-    sidebar_bg_color = "#202020"            # default is #202020
-    sidebar_img_border_color = "#515151"    # default is #515151
-    sidebar_p_color = "#909090"             # default is #909090
-    sidebar_h1_color = "#FFF"               # default is #FFF
-    sidebar_a_color = "#FFF"                # default is #FFF
-    sidebar_socials_color = "#FFF"          # default is #FFF
-    moon_sun_color = "#FFF"                 # default is #FFF
-    moon_sun_background_color = "#515151"   # default is #515151
+    sidebar_bg_color = "#002b36"            # default is #202020
+    sidebar_img_border_color = "#002b36"    # default is #515151
+    sidebar_p_color = "#eee8d5"             # default is #909090
+    sidebar_h1_color = "#fdf6e3"               # default is #FFF
+    sidebar_a_color = "#fdf6e3"                # default is #FFF
+    sidebar_socials_color = "#fdf6e3"          # default is #FFF
+    moon_sun_color = "#fdf6e3"                 # default is #FFF
+    moon_sun_background_color = "#073642"   # default is #515151
 
     # Hex colors for your content in light mode.
-    text_color = "#222"             # default is #222
-    content_bg_color = "#FAF9F6"    # default is #FAF9F6
-    post_title_color = "#303030"    # default is #303030
-    list_color = "#5a5a5a"          # default is #5a5a5a
-    link_color = "#268bd2"          # default is #268bd2
-    date_color = "#515151"          # default is #515151
+    text_color = "#073642"             # default is #222
+    content_bg_color = "#fdf6e3"    # default is #FAF9F6
+    post_title_color = "#073642"    # default is #303030
+    list_color = "#073642"          # default is #5a5a5a
+    link_color = "#2aa198"          # default is #268bd2
+    date_color = "#073642"          # default is #515151
     table_border_color = "#E5E5E5"  # default is #E5E5E5
     table_stripe_color = "#F9F9F9"  # default is #F9F9F9
 
     # Hex colors for your content in dark mode
-    text_color_dark = "#eee"                # default is #eee
-    content_bg_color_dark = "#121212"       # default is #121212
-    post_title_color_dark = "#DBE2E9"       # default is #DBE2E9
+    text_color_dark = "#eee8d5"                # default is #eee
+    content_bg_color_dark = "#002b36"       # default is #121212
+    post_title_color_dark = "#002b36"       # default is #DBE2E9
     list_color_dark = "#9d9d9d"             # default is #9d9d9d
     link_color_dark = "#268bd2"             # default is #268bd2
     date_color_dark = "#9a9a9a"             # default is #9a9a9a
     table_border_color_dark = "#515151"     # default is #515151
     table_stripe_color_dark = "#202020"     # default is #202020
-    code_color = "#bf616a"                  # default is #bf616a
-    code_background_color = "#E5E5E5"       # default is #E5E5E5
-    code_color_dark = "#ff7f7f"             # default is #ff7f7f
-    code_background_color_dark = "#393D47"  # default is #393D47
+    code_color = "#002b3d"                  # default is #bf616a
+    code_background_color = "#eee8d5"       # default is #E5E5E5
+    code_color_dark = "#fdf6e3"             # default is #ff7f7f
+    code_background_color_dark = "#073642"  # default is #393D47
 
     # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
     # og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
