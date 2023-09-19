@@ -1,7 +1,7 @@
 baseURL = 'https://meovvt.github.io/'
 languageCode = 'hu-hu'
 title = 'Már egyszer olvastam valahol valamikor talán'
-theme = 'poison'
+theme = 'mypoison'
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
