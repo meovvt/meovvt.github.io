@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://meovvt.github.io/'
+languageCode = 'hu-hu'
+title = 'Már egyszer olvastam valahol valamikor talán'
 theme = 'poison'
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
@@ -19,7 +19,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "Mi", URL = "what", HasChildren = false},
+        {Name = "Mi", URL = "about/about", HasChildren = false},
         {Name = "TIL", URL = "/til/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Linkelek", URL = "/links/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Receptek", URL = "/recept/", Pre = "Recent", HasChildren = true, Limit = 5},
