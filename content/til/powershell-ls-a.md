@@ -1,7 +1,7 @@
 ---
 title: Powershell ls vs. rejtett fájlok
 description: Powershell ls vs. rejtett fájlok
-tags: [til, powershell, CLI, shell]
+tags: [powershell, CLI, shell]
 date: '2023-09-19'
 ---
 

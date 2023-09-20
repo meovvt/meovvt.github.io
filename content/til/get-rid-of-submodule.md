@@ -1,7 +1,7 @@
 ---
 title: Mégsem akarom azt a git submodule-t
 description: Mégsem akarom azt a git submodule-t
-tags: [til, git, CLI]
+tags: [git, CLI]
 date: '2023-09-19'
 ---
 

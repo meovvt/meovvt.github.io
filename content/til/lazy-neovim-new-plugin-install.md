@@ -1,7 +1,7 @@
 ---
 title: Lazyvim új plugin
 description: Lazyvim új plugin
-tags: [til, neovim, nvim, plugin]
+tags: [neovim, nvim, plugin]
 date: '2023-09-20'
 ---
 

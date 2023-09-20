@@ -3,7 +3,7 @@ title: Weblap markdownra konvertálása
 linkTitle: Weblap markdownra konvertálása
 weight: 1
 description: Weblap markdownra konvertálása
-tags: [TIL, web, CLI, conversion, TODO, pandoc]
+tags: [web, CLI, conversion, TODO, pandoc]
 date: '2023-09-15'
 ---
 
