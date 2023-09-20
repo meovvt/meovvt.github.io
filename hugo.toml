@@ -20,9 +20,9 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "Mi", URL = "/about/", HasChildren = false},
-        {Name = "TIL", URL = "/til/", Pre = "Recent", HasChildren = true, Limit = 5},
-        {Name = "Linkelek", URL = "/links/", Pre = "Recent", HasChildren = true, Limit = 5},
-        {Name = "Receptek", URL = "/recept/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "TIL", URL = "/til/", HasChildren = true, Limit = 5},
+        {Name = "Linkelek", URL = "/links/", HasChildren = true, Limit = 5},
+        {Name = "Receptek", URL = "/recept/", HasChildren = true, Limit = 5},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
@@ -78,5 +78,4 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
 [taxonomies]
     series = 'series'
-    tags = 'tags'
 

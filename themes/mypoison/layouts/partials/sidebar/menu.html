@@ -23,7 +23,8 @@
                         <li class="sub-heading">
                             {{ $menu_item.Pre }}
                         </li>
-                        {{ range (first $menu_item.Limit .Pages) }}
+                        {{ $mylist := first $menu_item.Limit .Pages }}
+                        {{ range (sort $mylist "Date" "desc") }}
                             <li class="bullet">
                                 <a href="{{ .Permalink }}">{{ .Title }}</a>
                             </li>
