@@ -80,3 +80,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     series = 'series'
     tags = 'tags'
 
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+

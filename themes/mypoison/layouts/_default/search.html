@@ -1,0 +1,116 @@
+{{ define "main" }}
+
+<main>
+
+    <div id="search-results"></div>
+    <div class="search-loading">Loading...</div>
+
+    <script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}">
+        <h3><a href="${link}">${title}</a></h3>
+        <p>${snippet}</p>
+        <p>
+            <small>
+                ${ isset tags }Tags: ${tags}<br>${ end }
+            </small>
+        </p>
+    </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js" integrity="sha512-Nqw1tH3mpavka9cQCc5zWWEZNfIPdOYyQFjlV1NvflEtQ0/XI6ZQ+H/D3YgJdqSUJlMLAPRj/oXlaHCFbFCjoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</main>
+<script id="search-result-template" type="text/x-js-template">
+    <li class="post_item">
+      <div id="summary-${key}" class="excerpt">
+        <div class="excerpt_header">
+          <h3 class="post_link">
+            <a href="${link}" title="${title}">${title}</a>
+          </h3>
+        </div>
+        <div class="excerpt_footer">
+          <div class="matched-content">
+            <p>
+                ${snippet}
+            </p>
+            <p>
+                ${ isset tags }Tags: ${tags}${ end }
+            </p>
+            <p>
+                ${ isset categories }Categories: ${categories}${ end }
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js" integrity="sha512-KnvCNMwWBGCfxdOtUpEtYgoM59HHgjHnsVGSxxgz7QH1DYeURk+am9p3J+gsOevfE29DV0V+/Dd52ykTKxN5fA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="{{ "js/search.js" | absURL }}"></script>
+<style>
+  .search-section {
+    max-width: inherit;
+    overflow: inherit;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-form {
+    max-width: inherit;
+    overflow: inherit;
+    display: flex;
+  }
+  
+  input[type=text] {
+    flex-grow: 2;
+    padding: 12px 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-size: medium;
+  }
+
+  html[data-mode='lit'] input[type=text] {
+    background-color: #EEE8D5;
+    color: #000;
+  }
+
+  html[data-mode='dim'] input[type=text] {
+    background-color:#0D3640;
+    color: #E0E5E6
+  }
+
+  .input-label {
+    padding: 12px 20px;
+    flex-grow: 1;
+    text-align: right;
+    font-weight: bolder;
+  }
+  
+  .matched-content {
+    width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
+  
+  mark {
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: orange;
+  }
+  
+  html[data-mode='lit'] .post_item {
+    background-color: #eee8d5;
+  }
+  
+  </style>
+
+{{ end }}
+
+
