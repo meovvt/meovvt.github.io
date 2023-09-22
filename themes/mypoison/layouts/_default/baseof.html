@@ -8,6 +8,6 @@
             {{ block "sidebar" . }}{{ end }}
         </div>
         <script src="https://unpkg.com/lunr/lunr.js"></script>
-         <script src="/js/search.js"></script>
+        <script defer language="javascript" type="text/javascript" src="{{ (resources.Get "js/search.js" | minify | fingerprint).RelPermalink }}"></script>
     </body>
 </html>
