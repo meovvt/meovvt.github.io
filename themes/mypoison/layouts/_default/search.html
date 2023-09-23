@@ -1,11 +1,14 @@
-{{ define "main" }}
-<div class="container content">
-    <section class="post">
-        <h1 class="post-title">Search:</h1>
-        <input type="text" id="search-input" placeholder="Itt keress ..." oninput="showSearchResults()">
-        <br />
-        <ul id="list"></ul> <!-- this list is for rendering the results -->
-    </section>
-</div>
-{{end}}
-
+	{{ define "main" }}
+	
+	  <h2>Ahogy a gomd mondja</h2>
+	
+	  <input type="search" id="searchField">
+	  <button id="searchButton">Keress!</button>
+	
+	  <div id="output">
+	    <p>Hátha megtalálod...</p>
+	  </div>
+    <script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+    <script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script defer language="javascript" type="text/javascript" src="{{ (resources.Get "js/search.js" | minify | fingerprint).RelPermalink }}"></script>
+{{ end }}
