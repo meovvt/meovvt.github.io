@@ -1,6 +1,7 @@
 	{{ define "main" }}
 	
 	  <h2>Ahogy a gomb mondja</h2>
+
 	
 	  <input type="search" id="searchField">
 	  <button id="searchButton">Keress!</button>
@@ -8,7 +9,10 @@
 	  <div id="output">
 	    <p>Hátha megtalálod...</p>
 	  </div>
-    <script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+
     <script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+
+    <script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+
     <script defer language="javascript" type="text/javascript" src="{{ (resources.Get "js/search.js" | minify | fingerprint).RelPermalink }}"></script>
 {{ end }}
