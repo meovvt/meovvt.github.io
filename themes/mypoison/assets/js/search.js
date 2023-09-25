@@ -12,9 +12,9 @@ axios
     .then(response => {
       SearchApp.searchData = response.data;
       SearchApp.searchIndex = lunr(function () {
-        this.ref('permalink');
+        this.ref('href');
         this.field('title');
-        this.field('contents');
+        this.field('body');
         response.data.results.forEach(e => {
           this.add(e);
         });

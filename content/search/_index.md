@@ -10,4 +10,3 @@ outputs:
 - JSON
 ---
 
-### TESZT 2.
