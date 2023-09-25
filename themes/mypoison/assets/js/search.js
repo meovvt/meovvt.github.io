@@ -51,6 +51,6 @@ function display(list) {
       });
       SearchApp.output.appendChild(ul);
     }else{
-      SearchApp.output.innerHTML = "Nothing found";
+      SearchApp.output.innerHTML = "Lehet hogy a kövek alatt van?";
     }
   };
